@@ -524,11 +524,20 @@ QT_LOGGING_RULES='*false'
 
 ### Java
 
-Some apps require a Java jdk to work (e.g.: the apex lsp). To install java, install the packages
+Some apps require a Java jdk to work (e.g.: the apex lsp). To install java,
+install the packages
 
 ```bash
 pacman -S java-runtime-common java-environment-common
 ```
 
-and one of the OpenJDKs packages found [here](https://wiki.archlinux.org/title/Java#OpenJDK). Then use
-the provided script `archlinux-java` to choose the runtime to use.
+and one of the OpenJDKs packages found
+[here](https://wiki.archlinux.org/title/Java#OpenJDK). Then use the provided
+script `archlinux-java` to choose the runtime to use.
+
+### Performance improvement
+
+#### Watchdogs
+
+Follow [this](https://wiki.archlinux.org/title/Improving_performance#Watchdogs)
+to disable watchdog timers if unneeded.
