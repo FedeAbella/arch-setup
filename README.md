@@ -521,3 +521,14 @@ Qt can output a ton of stuff into `journalctl`. We can disable that by editing
 ```bash
 QT_LOGGING_RULES='*false'
 ```
+
+### Java
+
+Some apps require a Java jdk to work (e.g.: the apex lsp). To install java, install the packages
+
+```bash
+pacman -S java-runtime-common java-environment-common
+```
+
+and one of the OpenJDKs packages found [here](https://wiki.archlinux.org/title/Java#OpenJDK). Then use
+the provided script `archlinux-java` to choose the runtime to use.
